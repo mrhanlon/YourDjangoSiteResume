@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    
+    <meta name="blitz" content="mu-11e07e02-964ca3bd-fe63e687-f404a3bf">
+
     <title>{{ attendee.name }} @ DjangoCon 2015</title>
 
     {% load staticfiles %}
@@ -18,14 +19,14 @@
     <!-- Custom CSS -->
     <!--<link href="css/freelancer.css" rel="stylesheet">-->
     <link href="{% static 'app/css/freelancer.css' %}" rel="stylesheet">
-    
+
     <link href="{% static 'app/css/site.css' %}" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <!--<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">-->
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    
+
     <link href="{% static 'app/font-awesome/css/font-awesome.min.css' app/%}" rel="stylesheet" type="text/css">
 </head>
 <body id="page-top" class="index">
@@ -49,7 +50,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
                         <a href="#page-top"></a>
-                    </li>                    
+                    </li>
                     <li class="page-scroll">
                         <a href="#about">About this Challenge</a>
                     </li>
@@ -76,7 +77,7 @@
                     </div>
                     <div class="intro-text">
                         <span class="skills">{{ attendee.bio }}</span>
-                    </div>                    
+                    </div>
                 </div>
             </div>
         </div>
@@ -95,7 +96,7 @@
                         {% if attendee.email %}
                             <h3>Email: <a href="mailto:{{ attendee.email }}">{{ attendee.email }}</a></h3>
                         {% endif %}
-                        <h3>GitHub: <a href="http://github.com/{{ attendee.github_username }}">{{ attendee.github_username }}</a></h3>                            
+                        <h3>GitHub: <a href="http://github.com/{{ attendee.github_username }}">{{ attendee.github_username }}</a></h3>
                     </div>
                 </div>
             </div>
@@ -104,7 +105,7 @@
 
     <!-- Contact Section -->
 
-    
+
     <!-- About Section -->
     <section class="success" id="about">
         <div class="container">
@@ -165,7 +166,7 @@
     <script type="text/javascript">
 
         // This is Azure Application Insights.  http://azure.microsoft.com/en-us/services/application-insights/
-        // We're tracking views and showing them on a dashboard at Microsoft booth at DjangoCon. 
+        // We're tracking views and showing them on a dashboard at Microsoft booth at DjangoCon.
 
         var appInsights=window.appInsights||function(config){
             function s(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},r=document,f=window,e="script",o=r.createElement(e),i,u;for(o.src=config.url||"//az416426.vo.msecnd.net/scripts/a/ai.0.js",r.getElementsByTagName(e)[0].parentNode.appendChild(o),t.cookie=r.cookie,t.queue=[],i=["Event","Exception","Metric","PageView","Trace"];i.length;)s("track"+i.pop());return config.disableExceptionTracking||(i="onerror",s("_"+i),u=f[i],f[i]=function(config,r,f,e,o){var s=u&&u(config,r,f,e,o);return s!==!0&&t["_"+i](config,r,f,e,o),s}),t
